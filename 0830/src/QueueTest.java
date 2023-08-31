@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueTest {
+	public static void main(String[] args) {
+		Queue<Integer> queue = new LinkedList<>();
+		queue.add(100); // enqueue
+		queue.offer(200); // enqueue
+		queue.offer(300); // enqueue
+		System.out.println(queue.poll()); // dequeue
+		System.out.println(queue.poll());
+		System.out.println(queue.remove());
+		queue.clear(); // queue를 초기화
+	}
+}
